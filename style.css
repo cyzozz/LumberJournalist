@@ -1,42 +1,39 @@
-/* ================================
-   Global Styles
-================================= */
+/* === Google Fonts === */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;500&display=swap");
+
+/* === Global Styles === */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #212529;
-  line-height: 1.6;
+  font-family: "Lato", sans-serif;
+  background: #f9f9fb;
+  color: #222;
+  line-height: 1.7;
+  transition: background 0.3s, color 0.3s;
 }
 
-a {
-  color: #1a73e8;
-  text-decoration: none;
-  transition: all 0.3s ease;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Merriweather", serif;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-/* ================================
-   Header & Navigation
-================================= */
+/* === Header === */
 header {
-  background-color: #212529;
+  background: #111;
   color: #fff;
-  padding: 15px 20px;
+  padding: 15px 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
 }
 
 header .logo {
@@ -45,24 +42,26 @@ header .logo {
 }
 
 header nav a {
+  color: #eee;
   margin: 0 12px;
+  text-decoration: none;
   font-weight: 500;
-  color: #fff;
+  transition: color 0.3s;
 }
 
-header nav a:hover {
-  color: #1a73e8;
+header nav a:hover,
+header nav a.active {
+  color: #4da6ff;
 }
 
-/* ================================
-   Hero Section
-================================= */
+/* === Hero Section === */
 .hero {
-  background: url('https://picsum.photos/1200/500') no-repeat center/cover;
+  background: url("https://picsum.photos/1600/600") no-repeat center/cover;
   color: #fff;
   padding: 120px 20px;
   text-align: center;
-  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  animation: fadeIn 1.5s ease-in-out;
 }
 
 .hero h1 {
@@ -71,120 +70,194 @@ header nav a:hover {
 }
 
 .hero p {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
-/* ================================
-   Container
-================================= */
+/* === General Containers === */
 .container {
   max-width: 1100px;
-  margin: 40px auto;
+  margin: 30px auto;
   padding: 0 20px;
+  animation: slideUp 1.2s ease-in-out;
 }
 
-/* ================================
-   Cards (News, Interviews, Archive)
-================================= */
-.card, .interview-article, .archive-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* === Articles & Cards === */
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
 }
 
-.card:hover, .interview-article:hover, .archive-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+.card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+  height: 200px;
+  object-fit: cover;
 }
 
-.card h3, .interview-article h2, .archive-card h3 {
-  color: #212529;
+.card h3 {
+  font-size: 1.3em;
+  margin: 15px;
+}
+
+.card p {
+  margin: 0 15px 20px;
+  color: #444;
+}
+
+/* === Buttons === */
+.button {
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 20px;
+  background: #4da6ff;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #1e90ff;
+}
+
+/* === Info Box (Homepage Announcements) === */
+.info-box {
+  background: #eef6ff;
+  border-left: 5px solid #4da6ff;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 8px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.info-box h3 {
   margin-bottom: 10px;
 }
 
-.card p, .interview-article p, .archive-card p {
-  color: #495057;
-}
-
-/* ================================
-   QA (Questions & Answers)
-================================= */
-.qa {
-  margin-left: 20px;
-}
-
-.qa strong {
-  color: #212529;
-  display: block;
-  margin-bottom: 5px;
-}
-
-/* ================================
-   Buttons / Links
-================================= */
-button, .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #1a73e8;
-  color: #fff;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-button:hover, .btn:hover {
-  background-color: #155bb5;
-}
-
-/* ================================
-   Footer
-================================= */
+/* === Footer === */
 footer {
-  background-color: #212529;
+  background: #111;
+  color: #ccc;
+  text-align: center;
+  padding: 25px 15px;
+  margin-top: 50px;
+  font-size: 0.95em;
+}
+
+footer a {
+  color: #4da6ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* === Dark Mode === */
+body.dark {
+  background: #1a1a1a;
   color: #ddd;
-  text-align: center;
-  padding: 25px 20px;
-  margin-top: 40px;
-  font-size: 0.9em;
 }
 
-/* ================================
-   Info / Announcement
-================================= */
-.info-box {
-  background-color: #e9ecef;
-  padding: 20px;
-  border-left: 5px solid #1a73e8;
+body.dark header {
+  background: #000;
+}
+
+body.dark .card {
+  background: #222;
+  color: #ddd;
+}
+
+body.dark footer {
+  background: #000;
+  color: #999;
+}
+
+.toggle-dark {
+  cursor: pointer;
+  background: #4da6ff;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
   border-radius: 6px;
-  margin: 30px auto;
-  max-width: 700px;
-  text-align: center;
+  margin-left: 20px;
+  transition: background 0.3s;
 }
 
-/* ================================
-   Responsive
-================================= */
+.toggle-dark:hover {
+  background: #1e90ff;
+}
+
+/* === Animations === */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* === Responsive Navbar === */
 @media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav {
+    margin-top: 10px;
+  }
+
+  header nav a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
   .hero h1 {
-    font-size: 2em;
+    font-size: 2.2em;
   }
 
   .hero p {
-    font-size: 1.1em;
+    font-size: 1em;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    padding: 80px 15px;
   }
 
-  header {
-    flex-direction: column;
-    gap: 10px;
+  .hero h1 {
+    font-size: 1.8em;
+  }
+
+  .hero p {
+    font-size: 0.9em;
   }
 }
