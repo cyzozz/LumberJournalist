@@ -18,6 +18,7 @@
         <a href="archive.html">Archive</a>
         <a href="contact.html">Contact</a>
       </nav>
+      <div class="hamburger" id="hamburger">&#9776;</div>
     </header>
 
     <!-- Hero / Welcome Section -->
@@ -99,5 +100,27 @@
     <footer>
       <p>© 2025 Lumber Journalist Website | About | Contact | Privacy Policy</p>
     </footer>
+
+    <script>
+      // Hamburger menu toggle
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.querySelector("nav-links");
+
+      hamburger.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+
+        if (localStorage.getItem("navOpen") === "true") {
+          navLinks.classList.add("open");
+
+          hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+            localStorage.setItem(
+              "navOpen",
+              navLinks.classList.contains("open")
+            );
+          });
+        }
+      });
+    </script>
   </body>
 </html>

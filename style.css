@@ -23,7 +23,74 @@ h4 {
   font-family: "Merriweather", serif;
 }
 
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #5c3a21; /* dark brown */
+  color: #fff;
+  position: relative;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  transition: max-height 0.3s ease;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  nav {
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #5c3a21;
+    border-radius: 8px;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  nav a {
+    padding: 10px 15px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  nav.open {
+    max-height: 500px; /* large enough to show all links */
+    transition: max-height 0.3s ease;
+  }
+}
+
 /* === Header === */
+
 header {
   background: #111;
   color: #fff;
