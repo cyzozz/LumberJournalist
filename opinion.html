@@ -2,61 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Opinion - Lumber Journalist Website</title>
+    <title>Opinion - Lumber Journalist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: #f5f5f5;
-        color: #222;
-      }
-      header {
-        background: #222;
-        color: #fff;
-        padding: 15px 20px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        position: sticky;
-        top: 0;
-      }
-      header nav a {
-        color: #fff;
-        margin: 0 10px;
-        text-decoration: none;
-      }
-      .hero {
-        background: url("https://picsum.photos/1200/500?15") no-repeat
-          center/cover;
-        color: #fff;
-        padding: 100px 20px;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-      }
-      .hero h1 {
-        font-size: 2.5em;
-        margin: 0;
-      }
-      .container {
-        max-width: 1100px;
-        margin: 20px auto;
-        padding: 0 20px;
-      }
+      /* Extra styles for opinion articles */
       .articles {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
         gap: 20px;
       }
+
       .card {
         background: #fff;
-        padding: 15px;
-        border-radius: 6px;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
       }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      }
+
       .card img {
         width: 100%;
         border-radius: 6px;
+        margin-bottom: 15px;
       }
+
+      .card h3 {
+        margin-top: 0;
+        color: #222;
+      }
+
+      .card p {
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .card a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #1a73e8;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .card a:hover {
+        text-decoration: underline;
+      }
+
+      .hero {
+        background: url("https://picsum.photos/1200/500?16") no-repeat center/cover;
+        color: #fff;
+        padding: 100px 20px;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+        text-align: center;
+      }
+
+      .hero h1 {
+        font-size: 2.5em;
+        margin: 0;
+      }
+
       footer {
         background: #222;
         color: #ddd;
@@ -67,8 +77,9 @@
     </style>
   </head>
   <body>
+    <!-- Header -->
     <header>
-      <div class="logo">📰 Lumber Journalist</div>
+      <div class="logo">📰Lumber Journalist</div>
       <nav>
         <a href="index.html">Home</a>
         <a href="news.html">News</a>
@@ -79,25 +90,35 @@
       </nav>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
       <h1>Opinion Section</h1>
-      <p>Read opinions and editorials from our writers and contributors.</p>
+      <p>Read thought-provoking opinions and editorials from our writers.</p>
     </section>
 
+    <!-- Main Container -->
     <main class="container">
       <h2>Opinion Articles</h2>
       <div class="articles">
+        <!-- Sample Opinion Article 1 -->
         <div class="card">
-          <img src="https://picsum.photos/400/200?16" alt="" />
-          <h3>Opinion 1</h3>
-          <p>Summary of the first opinion article.</p>
+          <img src="https://picsum.photos/400/200?17" alt="Opinion 1 Image" />
+          <h3>Opinion Article 1</h3>
+          <p>Summary of the first opinion article goes here.</p>
+          <a href="#">Read Full Article</a>
         </div>
-      </div>
-    </main>
-  </body>
-</html>
 
-<footer>
+        <!-- Sample Opinion Article 2 -->
+        <div class="card">
+          <img src="https://picsum.photos/400/200?18" alt="Opinion 2 Image" />
+          <h3>Opinion Article 2</h3>
+          <p>Summary of the second opinion article goes here.</p>
+          <a href="#">Read Full Article</a>
+        </div>
+
+    <!-- Footer -->
+    <footer>
       <p>© 2025 Lumber Journalist | About | Contact | Privacy Policy</p>
     </footer>
   </body>
+</html>

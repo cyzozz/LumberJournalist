@@ -2,53 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Archive - Lumber Journalist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Archive - Lumber Journalist</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      /* Cards for archive */
-      .archive-section {
-        margin-top: 40px;
-      }
-
-      .archive-section h2 {
-        font-size: 2em;
-        color: #222;
-        margin-bottom: 20px;
-      }
-
-      .archive-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-      }
-
-      .archive-card {
-        background: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .archive-card h3 {
-        margin-top: 0;
-        color: #222;
-      }
-
-      .archive-card p {
-        color: #333;
-        line-height: 1.5;
-      }
-
-      .archive-card a {
-        color: #1a73e8;
-        text-decoration: none;
-      }
-
-      .archive-card a:hover {
-        text-decoration: underline;
-      }
-    </style>
   </head>
   <body>
     <!-- Header -->
@@ -59,7 +15,7 @@
         <a href="news.html">News</a>
         <a href="interviews.html">Interviews</a>
         <a href="opinion.html">Opinion</a>
-        <a href="archive.html">Archive</a>
+        <a href="archive.html" class="active">Archive</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
@@ -68,7 +24,7 @@
     <section class="hero">
       <h1>Archive</h1>
       <p>
-        All past articles and interviews from Lumber Journalist in one place.
+        All past articles and interviews from Lumber Journalists in one place.
       </p>
     </section>
 
@@ -77,16 +33,16 @@
       <!-- Articles Section -->
       <section class="archive-section">
         <h2>Articles</h2>
-        <div class="archive-grid">
-          <div class="archive-card">
+        <div class="articles">
+          <div class="card">
             <h3>Lumber News #161 — Weekly Recap</h3>
             <p>Published: September 28, 2025</p>
-            <a href="news.html#news161">Read Full Article</a>
+            <a href="news.html#news161" class="button">Read Full Article</a>
           </div>
-          <div class="archive-card">
+          <div class="card">
             <h3>Lumber News #160 — Weekly Recap</h3>
             <p>Published: September 21, 2025</p>
-            <a href="news.html#news160">Read Full Article</a>
+            <a href="news.html#news160" class="button">Read Full Article</a>
           </div>
           <!-- Add more article cards here -->
         </div>
@@ -95,16 +51,20 @@
       <!-- Interviews Section -->
       <section class="archive-section">
         <h2>Interviews</h2>
-        <div class="archive-grid">
-          <div class="archive-card">
+        <div class="articles">
+          <div class="card">
             <h3>Wednesday Interview #86 — @Bentley ඞ</h3>
             <p>Published: September 25, 2025</p>
-            <a href="interviews.html#interview86">Read Full Interview</a>
+            <a href="interviews.html#interview86" class="button"
+              >Read Full Interview</a
+            >
           </div>
-          <div class="archive-card">
+          <div class="card">
             <h3>Wednesday Interview #85 — @PlayerX</h3>
             <p>Published: September 18, 2025</p>
-            <a href="interviews.html#interview85">Read Full Interview</a>
+            <a href="interviews.html#interview85" class="button"
+              >Read Full Interview</a
+            >
           </div>
           <!-- Add more interview cards here -->
         </div>

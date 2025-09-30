@@ -10,8 +10,8 @@
 
 body {
   font-family: "Lato", sans-serif;
-  background: #f9f9fb;
-  color: #222;
+  background: #f7f3ef; /* light vintage paper tone */
+  color: #3a2f22; /* dark brown text */
   line-height: 1.7;
   transition: background 0.3s, color 0.3s;
 }
@@ -21,78 +21,12 @@ h2,
 h3,
 h4 {
   font-family: "Merriweather", serif;
-}
-
-/* Header Styling */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-  background: #5c3a21; /* dark brown */
-  color: #fff;
-  position: relative;
-  z-index: 1000;
-}
-
-nav {
-  display: flex;
-  gap: 20px;
-  transition: max-height 0.3s ease;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* Hamburger */
-.hamburger {
-  display: none;
-  flex-direction: column;
-  cursor: pointer;
-  gap: 5px;
-}
-
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background: #fff;
-  border-radius: 2px;
-}
-
-/* Responsive */
-@media screen and (max-width: 1024px) {
-  nav {
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background: #5c3a21;
-    border-radius: 8px;
-    overflow: hidden;
-    max-height: 0;
-  }
-
-  nav a {
-    padding: 10px 15px;
-  }
-
-  .hamburger {
-    display: flex;
-  }
-
-  nav.open {
-    max-height: 500px; /* large enough to show all links */
-    transition: max-height 0.3s ease;
-  }
+  color: #3a2f22;
 }
 
 /* === Header === */
-
 header {
-  background: #111;
+  background: #4b3621; /* dark brown */
   color: #fff;
   padding: 15px 25px;
   display: flex;
@@ -101,15 +35,17 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 2px solid #a78c5a; /* vintage accent */
 }
 
 header .logo {
-  font-size: 1.5em;
+  font-size: 1.6em;
   font-weight: bold;
+  letter-spacing: 1px;
 }
 
 header nav a {
-  color: #eee;
+  color: #fff;
   margin: 0 12px;
   text-decoration: none;
   font-weight: 500;
@@ -118,7 +54,7 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-  color: #4da6ff;
+  color: #d4b996; /* lighter vintage accent */
 }
 
 /* === Hero Section === */
@@ -127,13 +63,16 @@ header nav a.active {
   color: #fff;
   padding: 120px 20px;
   text-align: center;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
   animation: fadeIn 1.5s ease-in-out;
+  border-bottom: 3px solid #a78c5a;
 }
 
 .hero h1 {
   font-size: 3em;
   margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .hero p {
@@ -156,33 +95,52 @@ header nav a.active {
 }
 
 .card {
-  background: #fff;
+  background: #fef9f3; /* paper-style tone */
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s, box-shadow 0.3s;
-  animation: fadeIn 1.2s ease-in-out;
+  padding-bottom: 15px;
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-bottom: 2px solid #a78c5a;
 }
 
 .card h3 {
-  font-size: 1.3em;
+  font-size: 1.4em;
   margin: 15px;
+  color: #3a2f22;
 }
 
 .card p {
-  margin: 0 15px 20px;
-  color: #444;
+  margin: 0 15px 15px;
+  color: #5a4b3a;
+  line-height: 1.6;
+}
+
+.card a {
+  display: inline-block;
+  margin: 10px 15px;
+  padding: 8px 16px;
+  background: #4b3621;
+  color: #fff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.card a:hover {
+  background: #a78c5a;
 }
 
 /* === Buttons === */
@@ -190,7 +148,7 @@ header nav a.active {
   display: inline-block;
   margin: 15px;
   padding: 10px 20px;
-  background: #4da6ff;
+  background: #4b3621;
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
@@ -199,13 +157,13 @@ header nav a.active {
 }
 
 .button:hover {
-  background: #1e90ff;
+  background: #a78c5a;
 }
 
 /* === Info Box (Homepage Announcements) === */
 .info-box {
-  background: #eef6ff;
-  border-left: 5px solid #4da6ff;
+  background: #fdf6ed;
+  border-left: 5px solid #a78c5a;
   padding: 20px;
   margin: 30px 0;
   border-radius: 8px;
@@ -218,56 +176,22 @@ header nav a.active {
 
 /* === Footer === */
 footer {
-  background: #111;
-  color: #ccc;
+  background: #4b3621;
+  color: #fff;
   text-align: center;
   padding: 25px 15px;
   margin-top: 50px;
   font-size: 0.95em;
+  border-top: 2px solid #a78c5a;
 }
 
 footer a {
-  color: #4da6ff;
+  color: #d4b996;
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
-}
-
-/* === Dark Mode === */
-body.dark {
-  background: #1a1a1a;
-  color: #ddd;
-}
-
-body.dark header {
-  background: #000;
-}
-
-body.dark .card {
-  background: #222;
-  color: #ddd;
-}
-
-body.dark footer {
-  background: #000;
-  color: #999;
-}
-
-.toggle-dark {
-  cursor: pointer;
-  background: #4da6ff;
-  border: none;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 6px;
-  margin-left: 20px;
-  transition: background 0.3s;
-}
-
-.toggle-dark:hover {
-  background: #1e90ff;
 }
 
 /* === Animations === */
@@ -315,6 +239,7 @@ body.dark footer {
     font-size: 1em;
   }
 }
+
 @media (max-width: 480px) {
   .hero {
     padding: 80px 15px;
@@ -327,4 +252,73 @@ body.dark footer {
   .hero p {
     font-size: 0.9em;
   }
+}
+
+/* === Accessibility Enhancements === */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+  outline: 2px solid #a78c5a;
+  outline-offset: 2px;
+}
+
+/* === Print Styles === */
+@media print {
+  body {
+    background: #fff;
+    color: #000000;
+  }
+}
+
+/* === Contact Form Styling === */
+.contact-form {
+  background: #fef9f3;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 30px auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Georgia", serif;
+  color: #3a2f22;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #5a4b3a;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #fff8f0;
+  color: #3a2f22;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #a78c5a;
+  outline: none;
+}
+
+.contact-form button {
+  background: #4b3621;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #a78c5a;
 }
