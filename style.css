@@ -11,7 +11,7 @@
 body {
   font-family: "Lato", sans-serif;
   background: #f7f3ef; /* light vintage paper tone */
-  color: #3a2f22; /* dark brown text */
+  color: #352c22; /* dark brown text */
   line-height: 1.7;
   transition: background 0.3s, color 0.3s;
 }
@@ -21,12 +21,12 @@ h2,
 h3,
 h4 {
   font-family: "Merriweather", serif;
-  color: #3a2f22;
+  color: #ffffff;
 }
 
 /* === Header === */
 header {
-  background: #4b3621; /* dark brown */
+  background: #664b30; /* dark brown */
   color: #fff;
   padding: 15px 25px;
   display: flex;
@@ -148,7 +148,7 @@ header nav a.active {
   display: inline-block;
   margin: 15px;
   padding: 10px 20px;
-  background: #4b3621;
+  background: #3d2b18;
   color: #fff;
   border-radius: 8px;
   text-decoration: none;
