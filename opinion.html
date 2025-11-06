@@ -5,93 +5,23 @@
     <title>Opinion - Lumber Journalist</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <style>
-      /* Extra styles for opinion articles */
-      .articles {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-      }
-
-      .card {
-        background: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-        transition: transform 0.2s, box-shadow 0.2s;
-      }
-
-      .card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-      }
-
-      .card img {
-        width: 100%;
-        border-radius: 6px;
-        margin-bottom: 15px;
-      }
-
-      .card h3 {
-        margin-top: 0;
-        color: #222;
-      }
-
-      .card p {
-        line-height: 1.6;
-        color: #333;
-      }
-
-      .card a {
-        display: inline-block;
-        margin-top: 10px;
-        color: #1a73e8;
-        text-decoration: none;
-        font-weight: bold;
-      }
-
-      .card a:hover {
-        text-decoration: underline;
-      }
-
-      .hero {
-        background: url("https://picsum.photos/1200/500?16") no-repeat center/cover;
-        color: #fff;
-        padding: 100px 20px;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-        text-align: center;
-      }
-
-      .hero h1 {
-        font-size: 2.5em;
-        margin: 0;
-      }
-
-      footer {
-        background: #222;
-        color: #ddd;
-        text-align: center;
-        padding: 20px;
-        margin-top: 40px;
-      }
-    </style>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <div class="logo">📰Lumber Journalist</div>
+      <div class="logo">📰 Lumber Journalist</div>
       <nav>
         <a href="index.html">Home</a>
         <a href="news.html">News</a>
         <a href="interviews.html">Interviews</a>
-        <a href="opinion.html">Opinion</a>
+        <a href="opinion.html" class="active">Opinion</a>
         <a href="archive.html">Archive</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero hero-opinion">
       <h1>Opinion Section</h1>
       <p>Read thought-provoking opinions and editorials from our writers.</p>
     </section>
@@ -103,18 +33,26 @@
         <!-- Sample Opinion Article 1 -->
         <div class="card">
           <img src="https://picsum.photos/400/200?17" alt="Opinion 1 Image" />
-          <h3>Opinion Article 1</h3>
-          <p>Summary of the first opinion article goes here.</p>
+          <h3>When Duplicates Divide: Ethics in Lumber Tycoon 2</h3>
+          <p>
+            The duplicating scandal continues to split the community. Is it
+            harmless fun, or the end of fair play?
+          </p>
           <a href="#">Read Full Article</a>
         </div>
 
         <!-- Sample Opinion Article 2 -->
         <div class="card">
           <img src="https://picsum.photos/400/200?18" alt="Opinion 2 Image" />
-          <h3>Opinion Article 2</h3>
-          <p>Summary of the second opinion article goes here.</p>
+          <h3>Legacy vs Innovation: Should LT2 Ever Get a Sequel?</h3>
+          <p>
+            Some say a sequel would ruin the charm, others call it evolution.
+            What do the devs owe their fans?
+          </p>
           <a href="#">Read Full Article</a>
         </div>
+      </div>
+    </main>
 
     <!-- Footer -->
     <footer>
