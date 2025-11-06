@@ -57,26 +57,40 @@ header nav a.active {
   color: #ffc252; /* lighter vintage accent */
 }
 
-/* === Hero Section === */
-.hero {
-  background: url("https://picsum.photos/1600/600") no-repeat center/cover;
+/* === Hero Sections === */
+.hero,
+.hero-opinion {
   color: #ffffff;
   padding: 120px 20px;
   text-align: center;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
-  animation: fadeIn 1.5s ease-in-out;
   border-bottom: 3px solid #a78c5a;
+  animation: fadeIn 1.5s ease-in-out;
 }
 
-.hero h1 {
+.hero {
+  background: url("https://picsum.photos/1600/600") no-repeat center/cover;
+}
+
+.hero-opinion {
+  background: url("https://picsum.photos/1600/600?blur=2&grayscale") no-repeat
+    center/cover;
+  color: #fffaf0;
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero h1,
+.hero-opinion h1 {
   font-size: 3em;
   margin-bottom: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.hero p {
+.hero p,
+.hero-opinion p {
   font-size: 1.2em;
+  opacity: 0.95;
 }
 
 /* === General Containers === */
@@ -87,23 +101,36 @@ header nav a.active {
   animation: slideUp 1.2s ease-in-out;
 }
 
+.container h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #3a2f22;
+  border-bottom: 2px solid #a78c5a;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
 /* === Articles & Cards === */
 .articles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
 
 .card {
-  background: #fef9f3; /* paper-style tone */
+  background: #fffaf5; /* uniform for all pages */
   border-radius: 12px;
+  border: 1px solid #e2d2b9;
   overflow: hidden;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
   padding-bottom: 15px;
 }
 
 .card:hover {
+  background: #fff3e0;
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
@@ -130,8 +157,8 @@ header nav a.active {
 .card a {
   display: inline-block;
   margin: 8px 6px;
-  padding: 8px px;
-  background: #000000;
+  padding: 8px 14px;
+  background: #a78c5a;
   color: #fff;
   border-radius: 6px;
   text-decoration: none;
@@ -140,7 +167,7 @@ header nav a.active {
 }
 
 .card a:hover {
-  background: #a78c5a;
+  background: #3d2b18;
 }
 
 /* === Buttons === */
@@ -221,35 +248,34 @@ footer a:hover {
     flex-direction: column;
     align-items: flex-start;
   }
-
   header nav {
     margin-top: 10px;
   }
-
   header nav a {
     display: inline-block;
     margin: 5px 10px;
   }
-
-  .hero h1 {
+  .hero h1,
+  .hero-opinion h1 {
     font-size: 2.2em;
   }
-
-  .hero p {
+  .hero p,
+  .hero-opinion p {
     font-size: 1em;
   }
 }
 
 @media (max-width: 480px) {
-  .hero {
+  .hero,
+  .hero-opinion {
     padding: 80px 15px;
   }
-
-  .hero h1 {
+  .hero h1,
+  .hero-opinion h1 {
     font-size: 1.8em;
   }
-
-  .hero p {
+  .hero p,
+  .hero-opinion p {
     font-size: 0.9em;
   }
 }
@@ -267,7 +293,7 @@ textarea:focus {
 @media print {
   body {
     background: #fff;
-    color: #000000;
+    color: #000;
   }
 }
 
@@ -321,57 +347,4 @@ textarea:focus {
 
 .contact-form button:hover {
   background: #a78c5a;
-}
-
-/* === Opinion Page Specific Styles === */
-.hero-opinion {
-  background: url("https://picsum.photos/1600/600?blur=2&grayscale") no-repeat
-    center/cover;
-  color: #fffaf0;
-  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
-}
-
-.hero-opinion h1 {
-  font-size: 2.8em;
-  margin-bottom: 10px;
-}
-
-.hero-opinion p {
-  font-size: 1.2em;
-  opacity: 0.95;
-}
-
-.container h2 {
-  font-family: "Merriweather", serif;
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #3a2f22;
-  border-bottom: 2px solid #a78c5a;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* Opinion Cards Enhancement */
-.articles .card {
-  background: #fffaf5;
-  border: 1px solid #e2d2b9;
-  transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
-}
-
-.articles .card:hover {
-  background: #fff3e0;
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.articles .card a {
-  background: #a78c5a;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 6px;
-}
-
-.articles .card a:hover {
-  background: #3d2b18;
 }
