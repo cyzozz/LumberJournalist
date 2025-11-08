@@ -13,7 +13,7 @@ body {
   background: #faf6f0; /* light vintage paper tone */
   color: #3a2f22; /* dark brown text */
   line-height: 1.7;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3 color 0.3s;
 }
 
 h1,
