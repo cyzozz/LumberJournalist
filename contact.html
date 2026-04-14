@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact - Lumber Journalist</title>
+    <link rel="icon" type="image/png" href="LJ - Copy.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700,900&f[]=satoshi@400,500,700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav-bar">
+        <a href="index.html" class="logo">LJ</a
+        ><button
+          class="mobile-toggle"
+          id="mobile-menu-btn"
+          aria-label="Toggle menu"
+        >
+          <i class="ph ph-list"></i>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a
+          ><a href="news.html" class="nav-link">News</a
+          ><a href="interviews.html" class="nav-link">Interviews</a
+          ><a href="opinion.html" class="nav-link">Opinion</a
+          ><a href="archive.html" class="nav-link">Archive</a
+          ><a href="contact.html" class="nav-link active">Contact</a>
+        </div>
+      </nav>
+      <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="index.html" class="mobile-link">Home</a
+        ><a href="news.html" class="mobile-link">News</a
+        ><a href="interviews.html" class="mobile-link">Interviews</a
+        ><a href="opinion.html" class="mobile-link">Opinion</a
+        ><a href="archive.html" class="mobile-link">Archive</a
+        ><a href="contact.html" class="mobile-link active">Contact</a>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <p class="overline mb-4">Get In Touch</p>
+        <h1 class="page-title">Contact</h1>
+        <p class="page-desc">
+          Have a story tip, want to be interviewed, or just want to say hello?
+          We'd love to hear from you.
+        </p>
+      </div>
+    </section>
+
+    <main class="py-16">
+      <div class="container contact-grid">
+        <!-- Form -->
+        <div>
+          <h2 class="contact-form-title">Send a Message</h2>
+          <form id="contact-form" data-testid="contact-form">
+            <div class="form-group">
+              <label for="name" class="form-label">Name</label
+              ><input
+                type="text"
+                id="name"
+                class="form-input"
+                placeholder="Your name"
+                required
+                data-testid="contact-name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email</label
+              ><input
+                type="email"
+                id="email"
+                class="form-input"
+                placeholder="your@email.com"
+                required
+                data-testid="contact-email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject" class="form-label">Subject</label>
+              <select
+                id="subject"
+                class="form-input"
+                required
+                data-testid="contact-subject"
+              >
+                <option value="">Select a topic...</option>
+                <option value="story-tip">Story Tip</option>
+                <option value="interview-request">Interview Request</option>
+                <option value="opinion-submission">Opinion Submission</option>
+                <option value="feedback">General Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label
+              ><textarea
+                id="message"
+                rows="6"
+                class="form-input"
+                placeholder="Your message..."
+                required
+                data-testid="contact-message"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn-primary btn-full"
+              data-testid="contact-submit"
+            >
+              <span>Send Message</span><i class="ph ph-paper-plane-right"></i>
+            </button>
+          </form>
+          <div
+            id="form-success"
+            class="form-success hidden"
+            data-testid="contact-success"
+          >
+            <h3><i class="ph ph-check-circle"></i> Message Sent!</h3>
+            <p>
+              Thank you for reaching out. We'll get back to you as soon as
+              possible.
+            </p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div>
+          <h2 class="contact-sidebar-title">Other Ways to Reach Us</h2>
+          <div class="contact-card" data-testid="contact-discord">
+            <div class="contact-card-inner">
+              <div class="contact-card-icon">
+                <i class="ph ph-discord-logo"></i>
+              </div>
+              <div>
+                <h3>Discord</h3>
+                <p>
+                  The fastest way to reach us. Join the LT2FG Discord and
+                  message any Journalist team member.
+                </p>
+                <a
+                  rel="noopener"
+                  href="https://discord.gg/lt2"
+                  target="_blank"
+                  class="card-link"
+                  data-testid="discord-link"
+                  ><span>Join Discord</span><i class="ph ph-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="contact-card" data-testid="contact-community">
+            <div class="contact-card-inner">
+              <div class="contact-card-icon">
+                <i class="ph ph-newspaper"></i>
+              </div>
+              <div>
+                <h3>Read Our Content</h3>
+                <p>Browse our latest news, interviews, and opinion articles.</p>
+                <a href="news.html" class="card-link"
+                  ><span>Latest News</span><i class="ph ph-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-box" data-testid="contact-faq">
+            <h3>Frequently Asked Questions</h3>
+            <details>
+              <summary>
+                <span>How can I submit a story tip?</span
+                ><i class="ph ph-caret-down"></i>
+              </summary>
+              <p>
+                Use the contact form or reach out to us on Discord. We review
+                all tips and may follow up for more details.
+              </p>
+            </details>
+            <details>
+              <summary>
+                <span>Can I write for Lumber Journalist?</span
+                ><i class="ph ph-caret-down"></i>
+              </summary>
+              <p>
+                Yes! We're always looking for new writers. Submit your interest
+                through the contact form or join our Discord.
+              </p>
+            </details>
+            <details>
+              <summary>
+                <span>How do I request an interview?</span
+                ><i class="ph ph-caret-down"></i>
+              </summary>
+              <p>
+                Select "Interview Request" in the contact form and tell us about
+                yourself and why you'd like to be featured.
+              </p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>Lumber Journalist</h3>
+            <p>
+              Your trusted source for Lumber Tycoon 2 news, interviews, and
+              community content.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <a href="index.html">Home</a><a href="news.html">News</a
+            ><a href="interviews.html">Interviews</a
+            ><a href="opinion.html">Opinion</a
+            ><a href="archive.html">Archive</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Lumber Journalist. All Rights Reserved.</p>
+          <a rel="noopener" href="https://discord.gg/lt2" target="_blank" title="Join our Discord server"
+            ><i class="ph ph-discord-logo"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", function () {
+          var m = document.getElementById("mobile-menu");
+          var i = this.querySelector("i");
+          m.classList.toggle("hidden");
+          i.className = m.classList.contains("hidden")
+            ? "ph ph-list"
+            : "ph ph-x";
+        });
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          this.classList.add("hidden");
+          document.getElementById("form-success").classList.remove("hidden");
+          this.reset();
+        });
+    </script>
+  </body>
+</html>

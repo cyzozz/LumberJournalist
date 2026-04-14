@@ -1,0 +1,17 @@
+{
+  "connector": {},
+  "formatters": [],
+  "hints": {
+    "disown-opener": "error",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ]
+  },
+  "parsers": [],
+  "rules": {
+    "disown-opener": "error"
+  }
+}

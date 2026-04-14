@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home - Lumber Journalist</title>
+    <link rel="icon" type="image/png" href="LJ - Copy.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700,900&f[]=satoshi@400,500,700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="site-header" data-testid="main-header">
+      <nav class="container nav-bar">
+        <a href="index.html" class="logo" data-testid="logo-link">LJ</a>
+        <button
+          class="mobile-toggle"
+          id="mobile-menu-btn"
+          data-testid="mobile-menu-btn"
+          aria-label="Toggle menu"
+        >
+          <i class="ph ph-list"></i>
+        </button>
+        <div class="nav-links" data-testid="desktop-nav">
+          <a href="index.html" class="nav-link active" data-testid="nav-home"
+            >Home</a
+          >
+          <a href="news.html" class="nav-link" data-testid="nav-news">News</a>
+          <a
+            href="interviews.html"
+            class="nav-link"
+            data-testid="nav-interviews"
+            >Interviews</a
+          >
+          <a href="opinion.html" class="nav-link" data-testid="nav-opinion"
+            >Opinion</a
+          >
+          <a href="archive.html" class="nav-link" data-testid="nav-archive"
+            >Archive</a
+          >
+          <a href="contact.html" class="nav-link" data-testid="nav-contact"
+            >Contact</a
+          >
+        </div>
+      </nav>
+      <div
+        class="mobile-menu hidden"
+        id="mobile-menu"
+        data-testid="mobile-menu"
+      >
+        <a href="index.html" class="mobile-link active">Home</a>
+        <a href="news.html" class="mobile-link">News</a>
+        <a href="interviews.html" class="mobile-link">Interviews</a>
+        <a href="opinion.html" class="mobile-link">Opinion</a>
+        <a href="archive.html" class="mobile-link">Archive</a>
+        <a href="contact.html" class="mobile-link">Contact</a>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" data-testid="hero-section">
+      <div class="hero-bg">
+        <img
+          src="https://images.unsplash.com/photo-1723740477509-f0e14de29bc5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwzfHxwaW5lJTIwZm9yZXN0JTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHx8fDE3NzU5NDIzNzd8MA&ixlib=rb-4.1.0&q=85&w=1920"
+          alt="Forest background"
+        />
+      </div>
+      <div class="container hero-grid">
+        <div>
+          <p class="overline mb-4" data-testid="hero-overline">
+            Lumber Tycoon 2 Community
+          </p>
+          <h1 class="hero-title" data-testid="hero-title">
+            Lumber<br />Journalist
+          </h1>
+          <p class="hero-desc" data-testid="hero-description">
+            Discover stories, features, interviews, and opinions from our
+            writers. Stay informed, inspired, and connected.
+          </p>
+          <div class="hero-buttons">
+            <a href="news.html" class="btn-primary" data-testid="hero-cta-news">
+              <span>Read Latest News</span>
+              <i class="ph ph-arrow-right"></i>
+            </a>
+            <a href="#about" class="btn-secondary" data-testid="hero-cta-about">
+              <span>Learn More</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1562894252-7b102e5d10a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxheGUlMjB3b29kJTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHx8fDE3NzU5NDIzODh8MA&ixlib=rb-4.1.0&q=85&w=600"
+            alt="Axe on wood"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="section-marquee" data-testid="marquee-section">
+      <div class="marquee-track">
+        <span class="marquee-text"
+          >News - Interviews - Opinions - Community - Events - Features - News -
+          Interviews - Opinions - Community - Events - Features -</span
+        >
+      </div>
+    </div>
+
+    <!-- Discord -->
+    <section class="section-discord" data-testid="discord-section">
+      <div class="bg-image">
+        <img
+          src="https://images.unsplash.com/photo-1753297514865-016ed7975966?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBjb250cm9sbGVyJTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHx8fDE3NzU5NDIzODh8MA&ixlib=rb-4.1.0&q=85&w=1920"
+          alt="Gaming background"
+        />
+      </div>
+      <div class="container discord-content">
+        <p class="overline overline-discord">Community</p>
+        <h2 class="discord-title" data-testid="discord-title">
+          Join the LT2FG Discord!
+        </h2>
+        <p class="discord-desc">
+          Become part of one of the largest Lumber Tycoon 2 communities. Meet
+          builders, participate in events, and stay updated with easy access to
+          all Lumber Journalism content.
+        </p>
+        <a
+          href="https://discord.gg/lt2"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn-white"
+          data-testid="discord-join-btn"
+        >
+          <i class="ph ph-discord-logo discord-icon"></i>
+          <span>Join Now</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section-about" data-testid="about-section">
+      <div class="container about-grid">
+        <div>
+          <p class="overline mb-4">About Us</p>
+          <h2 class="about-title">Your Source for Quality LT2 Journalism</h2>
+          <p class="about-desc">
+            We are a team of dedicated Lumber Tycoon 2 players who became
+            journalists to bring the news to you. Our mission is to keep the
+            community informed, entertained, and connected through quality
+            content.
+          </p>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-card" data-testid="stat-news">
+            <p class="stat-number">167+</p>
+            <p class="stat-label">News Issues</p>
+          </div>
+          <div class="stat-card" data-testid="stat-interviews">
+            <p class="stat-number">50+</p>
+            <p class="stat-label">Interviews</p>
+          </div>
+          <div class="stat-card" data-testid="stat-writers">
+            <p class="stat-number">10+</p>
+            <p class="stat-label">Writers</p>
+          </div>
+          <div class="stat-card" data-testid="stat-community">
+            <p class="stat-number">1000+</p>
+            <p class="stat-label">Readers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section-newsletter" data-testid="newsletter-section">
+      <div class="container">
+        <i class="ph ph-envelope-simple newsletter-icon"></i>
+        <h2 class="newsletter-title">Never Miss an Issue</h2>
+        <p class="newsletter-desc">
+          Subscribe to get weekly news delivered straight to your inbox.
+        </p>
+        <form
+          id="newsletter-form"
+          class="newsletter-form"
+          data-testid="newsletter-form"
+        >
+          <input
+            type="email"
+            id="newsletter-email"
+            placeholder="Enter your email"
+            class="newsletter-input"
+            required
+            data-testid="newsletter-email"
+          />
+          <button
+            type="submit"
+            id="newsletter-submit"
+            class="newsletter-btn"
+            data-testid="newsletter-submit"
+          >
+            Subscribe
+          </button>
+        </form>
+        <p id="newsletter-message" class="newsletter-msg hidden"></p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer" data-testid="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>Lumber Journalist</h3>
+            <p>
+              Your trusted source for Lumber Tycoon 2 news, interviews, and
+              community content.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <a href="index.html">Home</a>
+            <a href="news.html">News</a>
+            <a href="interviews.html">Interviews</a>
+            <a href="opinion.html">Opinion</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>2025 Lumber Journalist. All Rights Reserved.</p>
+          <a
+            href="https://discord.gg/lt2"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Join our Discord server"
+            ><i class="ph ph-discord-logo"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Mobile menu
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", function () {
+          var menu = document.getElementById("mobile-menu");
+          var icon = this.querySelector("i");
+          menu.classList.toggle("hidden");
+          icon.className = menu.classList.contains("hidden")
+            ? "ph ph-list"
+            : "ph ph-x";
+        });
+
+      // Newsletter
+      document
+        .getElementById("newsletter-form")
+        .addEventListener("submit", async function (e) {
+          e.preventDefault();
+          var email = document.getElementById("newsletter-email");
+          var btn = document.getElementById("newsletter-submit");
+          var msg = document.getElementById("newsletter-message");
+          btn.disabled = true;
+          btn.textContent = "Subscribing...";
+          try {
+            var res = await fetch("/api/newsletter/subscribe", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ email: email.value }),
+            });
+            var data = await res.json();
+            msg.textContent = data.message || "Thanks for subscribing!";
+            msg.className = "newsletter-msg success";
+            msg.style.display = "block";
+            email.value = "";
+          } catch (err) {
+            msg.textContent = "Something went wrong. Please try again.";
+            msg.className = "newsletter-msg error";
+            msg.style.display = "block";
+          }
+          btn.disabled = false;
+          btn.textContent = "Subscribe";
+        });
+    </script>
+  </body>
+</html>

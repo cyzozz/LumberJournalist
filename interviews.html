@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Interviews - Lumber Journalist</title>
+    <link rel="icon" type="image/png" href="LJ - Copy.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700,900&f[]=satoshi@400,500,700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-testid="main-header">
+      <nav class="container nav-bar">
+        <a href="index.html" class="logo">LJ</a>
+        <button
+          class="mobile-toggle"
+          id="mobile-menu-btn"
+          aria-label="Toggle menu"
+        >
+          <i class="ph ph-list"></i>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a
+          ><a href="news.html" class="nav-link">News</a
+          ><a href="interviews.html" class="nav-link active">Interviews</a>
+          <a href="opinion.html" class="nav-link">Opinion</a
+          ><a href="archive.html" class="nav-link">Archive</a
+          ><a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </nav>
+      <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="index.html" class="mobile-link">Home</a
+        ><a href="news.html" class="mobile-link">News</a
+        ><a href="interviews.html" class="mobile-link active">Interviews</a>
+        <a href="opinion.html" class="mobile-link">Opinion</a
+        ><a href="archive.html" class="mobile-link">Archive</a
+        ><a href="contact.html" class="mobile-link">Contact</a>
+      </div>
+    </header>
+
+    <section class="page-header relative" data-testid="interviews-hero">
+      <div class="page-header-bg">
+        <img
+          src="https://images.unsplash.com/photo-1647892842753-01ee3cafd42e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxibGFjayUyMGFuZCUyMHdoaXRlJTIwbWluaW1hbGlzdCUyMGFic3RyYWN0fGVufDB8fHx8MTc3NTk0MjM4OHww&ixlib=rb-4.1.0&q=85&w=1920"
+          alt=""
+        />
+      </div>
+      <div class="container z-10 relative">
+        <p class="overline mb-4">Community Voices</p>
+        <h1 class="page-title">Interviews</h1>
+        <p class="page-desc">
+          Exclusive conversations with Lumber Tycoon 2's most notable community
+          members, builders, and staff.
+        </p>
+      </div>
+    </section>
+
+    <main class="py-16">
+      <div class="container">
+        <!-- Featured -->
+        <p class="overline mb-6">Featured Interview</p>
+        <div class="interview-featured mb-12" data-testid="featured-interview">
+          <div class="interview-featured-img">
+            <img
+              src="https://images.unsplash.com/photo-1562894252-7b102e5d10a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxheGUlMjB3b29kJTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHx8fDE3NzU5NDIzODh8MA&ixlib=rb-4.1.0&q=85&w=800"
+              alt="Featured interview"
+            />
+          </div>
+          <div class="interview-featured-body">
+            <span>October 2024</span>
+            <h2>Bobby The Dinosaur: From Pinball to Bob the Builder</h2>
+            <p>
+              We sit down with Bobby The Dinosaur, the creative mind behind the
+              real-life pinball machine that inspired the new "Bob the Builder"
+              role in the LT2FG community.
+            </p>
+            <a href="#" class="card-link"
+              ><span>Read Interview</span><i class="ph ph-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Grid -->
+        <p class="overline mb-6">Past Interviews</p>
+        <div class="card-grid card-grid-3">
+          <article class="card" data-testid="interview-card-1">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1723740477509-f0e14de29bc5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MDV8MHwxfHNlYXJjaHwzfHxwaW5lJTIwZm9yZXN0JTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHx8fDE3NzU5NDIzNzd8MA&ixlib=rb-4.1.0&q=85&w=600"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <p class="overline">September 2024</p>
+              <h3>Cesar Geronimo: Leading the Fan Group</h3>
+              <p>
+                An in-depth conversation with the group leader about community
+                management and vision.
+              </p>
+              <a href="#" class="card-link"
+                ><span>Read More</span><i class="ph ph-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+          <article class="card" data-testid="interview-card-2">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1663047272459-cdfd12c0e88b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHx3b29kJTIwdGV4dHVyZSUyMGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8fHwxNzc1OTQyMzc3fDA&ixlib=rb-4.1.0&q=85&w=600"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <p class="overline">August 2024</p>
+              <h3>Top Builders Roundtable Discussion</h3>
+              <p>
+                Five master builders discuss their techniques and favorite
+                creations.
+              </p>
+              <a href="#" class="card-link"
+                ><span>Read More</span><i class="ph ph-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+          <article class="card" data-testid="interview-card-3">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1753297514865-016ed7975966?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBjb250cm9sbGVyJTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHx8fDE3NzU5NDIzODh8MA&ixlib=rb-4.1.0&q=85&w=600"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <p class="overline">July 2024</p>
+              <h3>New Staff Members: Meet the Team</h3>
+              <p>
+                Getting to know the newest additions to the moderation team.
+              </p>
+              <a href="#" class="card-link"
+                ><span>Read More</span><i class="ph ph-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta-banner-dark" data-testid="interview-cta">
+          <div class="cta-banner-dark-inner">
+            <div>
+              <h3>Want to be Featured?</h3>
+              <p>
+                Are you a notable builder or community member? We'd love to hear
+                your story.
+              </p>
+            </div>
+            <a
+              href="contact.html"
+              class="btn-white"
+              data-testid="request-interview-btn"
+              >Request Interview</a
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer" data-testid="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>Lumber Journalist</h3>
+            <p>
+              Your trusted source for Lumber Tycoon 2 news, interviews, and
+              community content.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <a href="index.html">Home</a><a href="news.html">News</a
+            ><a href="interviews.html">Interviews</a
+            ><a href="opinion.html">Opinion</a
+            ><a href="archive.html">Archive</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Lumber Journalist. All Rights Reserved.</p>
+          <a
+            href="https://discord.gg/lt2"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Join our Discord server"
+            ><i class="ph ph-discord-logo"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", function () {
+          var m = document.getElementById("mobile-menu");
+          var i = this.querySelector("i");
+          m.classList.toggle("hidden");
+          i.className = m.classList.contains("hidden")
+            ? "ph ph-list"
+            : "ph ph-x";
+        });
+    </script>
+  </body>
+</html>

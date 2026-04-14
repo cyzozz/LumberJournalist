@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Privacy Policy - Lumber Journalist</title>
+    <link rel="icon" type="image/png" href="LJ - Copy.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700,900&f[]=satoshi@400,500,700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav-bar">
+        <a href="index.html" class="logo">LJ</a
+        ><button
+          class="mobile-toggle"
+          id="mobile-menu-btn"
+          aria-label="Toggle menu"
+        >
+          <i class="ph ph-list"></i>
+        </button>
+        <div class="nav-links">
+          <a href="index.html" class="nav-link">Home</a
+          ><a href="news.html" class="nav-link">News</a
+          ><a href="interviews.html" class="nav-link">Interviews</a
+          ><a href="opinion.html" class="nav-link">Opinion</a
+          ><a href="archive.html" class="nav-link">Archive</a
+          ><a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </nav>
+      <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="index.html" class="mobile-link">Home</a
+        ><a href="news.html" class="mobile-link">News</a
+        ><a href="interviews.html" class="mobile-link">Interviews</a
+        ><a href="opinion.html" class="mobile-link">Opinion</a
+        ><a href="archive.html" class="mobile-link">Archive</a
+        ><a href="contact.html" class="mobile-link">Contact</a>
+      </div>
+    </header>
+
+    <section class="page-header">
+      <div class="container">
+        <p class="overline mb-4">Legal</p>
+        <h1 class="page-title">Privacy Policy</h1>
+        <p class="page-desc">
+          Your privacy is important. This policy explains how we handle your
+          data.
+        </p>
+      </div>
+    </section>
+
+    <main class="py-16">
+      <div class="container-sm">
+        <div class="privacy-section">
+          <h2>Information We Collect</h2>
+          <div class="privacy-block">
+            <p>
+              We collect minimal information necessary to provide our journalism
+              services:
+            </p>
+            <ul>
+              <li>Contact form submissions (name, email, message)</li>
+              <li>Newsletter email subscriptions</li>
+              <li>Basic analytics data (page views, visit duration)</li>
+            </ul>
+          </div>
+        </div>
+        <div class="privacy-section">
+          <h2>How We Use Your Information</h2>
+          <div class="privacy-block">
+            <p>Your information is used solely for:</p>
+            <ul>
+              <li>Responding to your inquiries and messages</li>
+              <li>Sending newsletter updates</li>
+              <li>Improving our website and content</li>
+            </ul>
+          </div>
+        </div>
+        <div class="privacy-section">
+          <h2>Data Protection</h2>
+          <div class="privacy-block">
+            <p>
+              We take reasonable measures to protect your personal information.
+              We do not sell, trade, or otherwise transfer your information to
+              outside parties.
+            </p>
+          </div>
+        </div>
+        <div class="privacy-section">
+          <h2>Third-Party Links</h2>
+          <div class="privacy-block">
+            <p>
+              Our website may contain links to third-party sites (such as
+              Discord). We are not responsible for the privacy practices of
+              these external sites.
+            </p>
+          </div>
+        </div>
+        <div class="privacy-section">
+          <h2>Contact Us</h2>
+          <div class="privacy-block">
+            <p>
+              If you have questions about this privacy policy, please
+              <a href="contact.html">contact us</a>.
+            </p>
+          </div>
+        </div>
+        <div class="privacy-updated"><p>Last updated: January 2025</p></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>Lumber Journalist</h3>
+            <p>
+              Your trusted source for Lumber Tycoon 2 news, interviews, and
+              community content.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <a href="index.html">Home</a><a href="news.html">News</a
+            ><a href="interviews.html">Interviews</a
+            ><a href="opinion.html">Opinion</a
+            ><a href="archive.html">Archive</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Lumber Journalist. All Rights Reserved.</p>
+          <a
+            href="https://discord.gg/lt2"
+            target="_blank"
+            rel="noopener"
+            aria-label="Join our Discord server"
+            ><i class="ph ph-discord-logo"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", function () {
+          var m = document.getElementById("mobile-menu");
+          var i = this.querySelector("i");
+          m.classList.toggle("hidden");
+          i.className = m.classList.contains("hidden")
+            ? "ph ph-list"
+            : "ph ph-x";
+        });
+    </script>
+  </body>
+</html>

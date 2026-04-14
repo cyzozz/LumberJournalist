@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Opinion - Lumber Journalist</title>
+    <link rel="icon" type="image/png" href="LJ - Copy.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@800,500,700,900&f[]=satoshi@400,500,700&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-testid="main-header">
+      <nav class="container nav-bar">
+        <a href="index.html" class="logo" data-testid="logo-link">LJ</a>
+        <button
+          class="mobile-toggle"
+          id="mobile-menu-btn"
+          data-testid="mobile-menu-btn"
+          aria-label="Toggle menu"
+        >
+          <i class="ph ph-list"></i>
+        </button>
+        <div class="nav-links" data-testid="desktop-nav">
+          <a href="index.html" class="nav-link">Home</a
+          ><a href="news.html" class="nav-link">News</a
+          ><a href="interviews.html" class="nav-link">Interviews</a>
+          <a href="opinion.html" class="nav-link active">Opinion</a
+          ><a href="archive.html" class="nav-link">Archive</a
+          ><a href="contact.html" class="nav-link">Contact</a>
+        </div>
+      </nav>
+      <div
+        class="mobile-menu hidden"
+        id="mobile-menu"
+        data-testid="mobile-menu"
+      >
+        <a href="index.html" class="mobile-link">Home</a
+        ><a href="news.html" class="mobile-link">News</a
+        ><a href="interviews.html" class="mobile-link">Interviews</a>
+        <a href="opinion.html" class="mobile-link active">Opinion</a
+        ><a href="archive.html" class="mobile-link">Archive</a
+        ><a href="contact.html" class="mobile-link">Contact</a>
+      </div>
+    </header>
+
+    <section class="page-header relative" data-testid="opinion-hero">
+      <div class="page-header-bg">
+        <img
+          src="https://images.unsplash.com/photo-1647892842753-01ee3cafd42e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxibGFjayUyMGFuZCUyMHdoaXRlJTIwbWluaW1hbGlzdCUyMGFic3RyYWN0fGVufDB8fHx8MTc3NTk0MjM4OHww&ixlib=rb-4.1.0&q=85&w=1920"
+          alt=""
+        />
+      </div>
+      <div class="container z-10 relative">
+        <p class="overline mb-4">Editorials &amp; Commentary</p>
+        <h1 class="page-title">Opinions</h1>
+        <p class="page-desc">
+          Read thought-provoking opinions and editorials from our writers.
+        </p>
+      </div>
+    </section>
+
+    <main class="py-16">
+      <div class="container">
+        <div class="card-grid card-grid-2">
+          <article class="card" data-testid="opinion-card-1">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1562894252-7b102e5d10a5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxheGUlMjB3b29kJTIwYmxhY2slMjBhbmQlMjB3aGl0ZXxlbnwwfHx8fDE3NzU5NDIzODh8MA&ixlib=rb-4.1.0&q=85&w=800"
+                alt="Opinion article"
+              />
+            </div>
+            <div class="card-body">
+              <p class="overline">Ethics</p>
+              <h3>When Duplicates Divide: Ethics in Lumber Tycoon 2</h3>
+              <p>
+                The duplicating scandal continues to split the community. Is it
+                harmless fun, or the end of fair play?
+              </p>
+              <a
+                href="opinions.html"
+                class="card-link"
+                data-testid="read-opinion-1"
+                ><span>Read Full Article</span><i class="ph ph-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+          <article class="card" data-testid="opinion-card-2">
+            <div class="card-image">
+              <img
+                src="https://images.unsplash.com/photo-1663047272459-cdfd12c0e88b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzV8MHwxfHNlYXJjaHwzfHx3b29kJTIwdGV4dHVyZSUyMGJsYWNrJTIwYW5kJTIwd2hpdGV8ZW58MHx8fHwxNzc1OTQyMzc3fDA&ixlib=rb-4.1.0&q=85&w=800"
+                alt="Opinion article"
+              />
+            </div>
+            <div class="card-body">
+              <p class="overline">Future</p>
+              <h3>Legacy vs Innovation: Should LT2 Ever Get a Sequel?</h3>
+              <p>
+                Some say a sequel would ruin the charm, others call it
+                evolution. What do the devs owe their fans?
+              </p>
+              <a
+                href="opinions.html"
+                class="card-link"
+                data-testid="read-opinion-2"
+                ><span>Read Full Article</span><i class="ph ph-arrow-right"></i
+              ></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="cta-banner" data-testid="opinion-cta">
+          <h3>Have an Opinion?</h3>
+          <p>
+            We're always looking for new voices. If you have thoughts on the LT2
+            community, reach out to us!
+          </p>
+          <a
+            href="contact.html"
+            class="btn-primary"
+            data-testid="submit-opinion-btn"
+            ><span>Submit Your Opinion</span><i class="ph ph-pencil-line"></i
+          ></a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer" data-testid="main-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>Lumber Journalist</h3>
+            <p>
+              Your trusted source for Lumber Tycoon 2 news, interviews, and
+              community content.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Navigation</h4>
+            <a href="index.html">Home</a><a href="news.html">News</a
+            ><a href="interviews.html">Interviews</a
+            ><a href="opinion.html">Opinion</a
+            ><a href="archive.html">Archive</a>
+          </div>
+          <div class="footer-col">
+            <h4>Legal</h4>
+            <a href="privacy.html">Privacy Policy</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Lumber Journalist. All Rights Reserved.</p>
+          <a
+            href="https://discord.gg/lt2"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Join our Discord server"
+            ><i class="ph ph-discord-logo"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .getElementById("mobile-menu-btn")
+        .addEventListener("click", function () {
+          var m = document.getElementById("mobile-menu");
+          var i = this.querySelector("i");
+          m.classList.toggle("hidden");
+          i.className = m.classList.contains("hidden")
+            ? "ph ph-list"
+            : "ph ph-x";
+        });
+    </script>
+  </body>
+</html>
